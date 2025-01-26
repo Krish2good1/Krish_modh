@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laptop Listings</title>
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #0073e6;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #005bb5;
+            padding: 0.5rem;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1rem;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 20px auto;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .card {
+            background: white;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.2s;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        .card img {
+            width: 100%;
+            height: auto;
+        }
+        .card-content {
+            padding: 15px;
+            text-align: center;
+        }
+        .card-title {
+            font-size: 16px;
+            font-weight: bold;
+            margin: 0 0 10px;
+        }
+        .card-price {
+            color: #b12704;
+            font-size: 18px;
+            margin: 0;
+        }
+        footer {
+            background-color: #f1f1f1;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+        .add-to-cart-btn {
+            background-color: #0073e6;
+            color: white;
+            border: none;
+            padding: 10px;
+            width: 100%;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        .add-to-cart-btn:hover {
+            background-color: #005bb5;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Dhaval and Sons Electronics</h1>
+        <p>Your one-stop shop for all electronic needs!</p>
+    </header>
+
+    <nav>
+        <label for="serch"></label>
+        <input type="text" id="serch" name="serch" placeholder="Serch">
+        <a href="index.html">Home</a>
+        <a href="product.html">Products</a>
+        <a href="cart.html">Cart</a>
+        <a href="about.html">About Us</a>
+        <a href="contect.html">Contact</a>
+        <a href="login.html">Account</a>
+    </nav>
+
+    <div class="container">
+        <h2 style="text-align: center; color: #0073e6; margin-bottom: 20px;">Laptop Listings</h2>
+        <div class="grid">
+            <!-- Laptop Card 1 -->
+            <div class="card">
+                <img src="hp.webp" alt="Laptop 1">
+                <div class="card-content">
+                    <h2 class="card-title">HP 15, 12th Gen Intel Core i5-1235U, 16GB DDR4, 512GB SSD, (Win 11, Office 21, Silver, 1.69kg), Anti-Glare, 15.6-inch(39.6cm) FHD Laptop, Intel Iris Xe Graphics, HD Camera, Backlit Keyboard, fy5009tu</h2>
+                    <p class="card-price">&#8377;49,999</p>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+            </div>
+            <!-- Laptop Card 2 -->
+            <div class="card">
+                <img src="mac.webp" alt="Laptop 2">
+                <div class="card-content">
+                    <h2 class="card-title">Apple MacBook Air Laptop: Apple M1 chip, 13.3-inch/33.74 cm Retina Display, 8GB RAM, 256GB SSD Storage, Backlit Keyboard, FaceTime HD Camera, Touch ID. Works with iPhone/iPad; Space Grey</h2>
+                    <p class="card-price">&#8377;74,998</p>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+            </div>
+            <!-- Laptop Card 3 -->
+            <div class="card">
+                <img src="asus1.webp" alt="Laptop 3">
+                <div class="card-content">
+                    <h2 class="card-title">ASUS TUF Dash F15 (2022), 15.6-inch (39.62 cms) WQHD 165Hz/3ms, Intel Core i7-12650H 12th Gen, RTX 3070 8GB Graphics, Gaming Laptop (16GB/1TB SSD/Windows 11/Office 2021/Black/2 kg), FX517ZR-HQ030WS</h2>
+                    <p class="card-price">&#8377;1,85,999</p>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+            </div>
+            <!-- Laptop Card 4 -->
+            <div class="card">
+                <img src="acer.jpg" alt="Laptop 4">
+                <div class="card-content">
+                    <h2 class="card-title">Acer Nitro V Gaming Laptop 13th Gen Intel Core i5-13420H with RTX 4050 Graphics 6GB VRAM, 144Hz Display (16GB DDR5/1TB SSD/Windows 11 Home/Wi-Fi 6),15.6"(39.6cms) FHD ANV15-51</h2>
+                    <p class="card-price">&#8377;99,999</p>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+            </div>
+            <!-- Laptop Card 5 -->
+            <div class="card">
+                <img src="victus.webp" alt="Laptop 5">
+                <div class="card-content">
+                    <h2 class="card-title">HP Victus, 13th Gen Intel Core i7-13620H, 6GB NVIDIA RTX 4050, 16GB DDR6, 1TB SSD (Win11, Office21, Silver, 2.3kg) 144Hz, IPS, 15.6-inch(39.6cm) Flicker-Free Gaming Laptop, Enhanced Cooling, fa1332TX</h2>
+                    <p class="card-price">&#8377;1,12,999</p>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+            </div>
+            <!-- Laptop Card 6 -->
+            <div class="card">
+                <img src="omen.jpg" alt="Laptop 6">
+                <div class="card-content">
+                    <h2 class="card-title">HP [Smart Choice Omen Gaming Laptop, AMD Ryzen 7 7840Hs, 8GB RTX 4060 GPU, 16.1"(40.9 Cm), FHD, IPS, 165 Hz, 300 Nits, 16GB DDR5, 1Tb SSD, RGB Kb, 7Ms Response Time (Win 11, Black, 2.32 Kg),Xd0020Ax</h2>
+                    <p class="card-price">&#8377;1,19,999</p>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+            </div>
+            
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Dhaval and Sons Electronics. All rights reserved.</p>
+    </footer>
+</body>
+</html>

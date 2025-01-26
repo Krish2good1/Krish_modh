@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phone Listings </title>
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #0073e6;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #005bb5;
+            padding: 0.5rem;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1rem;
+        }
+        .container {
+            padding: 2rem;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+        }
+        .card {
+            background: white;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.2s;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        .card img {
+            width: 100%;
+            height: auto;
+            border-bottom: 1px solid #ccc;
+        }
+        .card-content {
+            padding: 15px;
+        }
+        .card-title {
+            font-size: 16px;
+            font-weight: bold;
+            margin: 0 0 10px;
+        }
+        .card-price {
+            color: #b12704;
+            font-size: 18px;
+            margin: 0;
+        }
+        .add-to-cart-btn {
+            background-color: #0073e6;
+            color: white;
+            border: none;
+            padding: 10px;
+            width: 100%;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        .add-to-cart-btn:hover {
+            background-color: #005bb5;
+        }
+        footer {
+            background-color: #f1f1f1;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Dhaval and Sons Electronics</h1>
+        <p>Your one-stop shop for all electronic needs!</p>
+    </header>
+
+    <nav>
+        <label for="serch"></label>
+        <input type="text" id="serch" name="serch" placeholder="Serch">
+        <a href="index.html">Home</a>
+        <a href="product.html">Products</a>
+        <a href="cart.html">Cart</a>
+        <a href="about.html">About Us</a>
+        <a href="contect.html">Contact</a>
+        <a href="login.html">Account</a>
+
+    </nav>
+
+    <main>
+        <div class="container">
+            <h2>Phone Listings</h2>
+            <div class="grid">
+                <!-- Phone Card 1 -->
+                <div class="card">
+                    <img src="sumsung.webp" alt="Phone 1">
+                    <div class="card-content">
+                        <h2 class="card-title">Samsung Galaxy S24 Ultra 5G AI Smartphone (Titanium Black, 12GB, 256GB Storage)</h2>
+                        <p class="card-price">₹1,07,000</p>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+                <!-- Phone Card 2 -->
+                <div class="card">
+                    <img src="iphone.webp" alt="Phone 2">
+                    <div class="card-content">
+                        <h2 class="card-title">iPhone 16 128 GB: 5G Mobile Phone with Camera Control, A18 Chip and a Big Boost in Battery Life. Works with AirPods; Black</h2>
+                        <p class="card-price">₹74,999</p>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+                <!-- Phone Card 3 -->
+                <div class="card">
+                    <img src="vivo.jpg" alt="Phone 3">
+                    <div class="card-content">
+                        <h2 class="card-title">Vivo X200 5G (Cosmos Black, 16GB RAM, 512GB Storage)</h2>
+                        <p class="card-price">₹71,999</p>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+                <!-- Phone Card 4 -->
+                <div class="card">
+                    <img src="sumsung2.png" alt="Phone 4">
+                    <div class="card-content">
+                        <h2 class="card-title">Samsung Galaxy A23 5G, Silver (8GB, 128GB Storage)</h2>
+                        <p class="card-price">₹21,999</p>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+                <!-- Phone Card 5 -->
+                <div class="card">
+                    <img src="oneplus.jpg" alt="Phone 5">
+                    <div class="card-content">
+                        <h2 class="card-title">OnePlus Nord CE4 (Celadon Marble, 8GB RAM, 128GB Storage)</h2>
+                        <p class="card-price">₹21,999</p>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+                <!-- Phone Card 6 -->
+                <div class="card">
+                    <img src="moto.jpg" alt="Phone 6">
+                    <div class="card-content">
+                        <h2 class="card-title">Motorola Edge 50 Fusion 5G (Marshmallow Blue, 12GB RAM, 256GB Storage)</h2>
+                        <p class="card-price">₹23,999</p>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Dhaval and Sons Electronics. All rights reserved.</p>
+    </footer>
+</body>
+</html>
