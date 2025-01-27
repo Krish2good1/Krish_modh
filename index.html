@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dhaval and Sons Electronics</title>
+    
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1, p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+header {
+    background-color: #0073e6;
+    color: white;
+    padding: 16px;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between; /* Spread items evenly */
+    align-items: center; /* Align items vertically in the center */
+    background-color: #005bb5;
+    padding: 8px;
+    flex-wrap: wrap; /* Allow items to wrap to the next line on very small screens */
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 16px;
+    font-size: 16px;
+}
+
+nav input {
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+    margin-top: 8px;
+}
+
+/* Make the navigation items responsive */
+@media only screen and (max-width: 600px) {
+    nav {
+        justify-content: space-between; /* Evenly distribute navigation items */
+        flex-wrap: nowrap; /* Prevent wrapping */
+    }
+
+    nav a {
+        margin: 0 10px; /* Reduce space between navigation links */
+        font-size: 14px; /* Smaller font for mobile screens */
+    }
+
+    nav input {
+        flex-grow: 1; /* Allow search box to take available space */
+        max-width: 200px; /* Set a max-width for the search box */
+        margin-top: 0; /* Adjust the margin for a cleaner look */
+    }
+}
+
+/* Product Grid Styles */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
+    gap: 16px;
+    padding: 16px;
+}
+
+.product {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 16px;
+    text-align: center;
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 16px;
+}
+
+.product button {
+    background-color: #0073e6;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.product button:hover {
+    background-color: #005bb5;
+}
+
+footer {
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 16px;
+    margin-top: 32px;
+}
+
+/* Tablet responsiveness (600px - 900px) */
+@media only screen and (max-width: 900px) {
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr); /* Two columns on tablets */
+    }
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Dhaval and Sons Electronics</h1>
+        <p>Your one-stop shop for all electronic needs!</p>
+    </header>
+
+    <nav>
+        <label for="serch"></label>
+        <input type="text" id="serch" name="serch" placeholder="Serch">
+        <a href="index.html">Home</a>
+        <a href="product.html">Products</a>
+        <a href="cart.html">Cart</a>
+        <a href="about.html">About Us</a>
+        <a href="contect.html">Contact</a>
+        <a href="login.html">Account</a>
+
+        
+    </nav>
+
+    <main>
+        <section id="products" class="product-grid">
+            <div class="product">
+                <img src="phone_mian.jpg" alt="Smartphone">
+                <h3>Smartphone</h3>
+                 <p> Staring Price: ₹19,999</p>     <!-- &#8377 tag of ruppe -->
+                <button><a href="smartphone.html">View More</a></button>
+            </div>
+            <div class="product">
+                <img src="leptop_main.jpg" alt="Laptop">
+                <h3>Laptop</h3>
+                <p>Staring Price: ₹49,999</p>
+                <button><a href="leptop.html">View More</a></button>
+            </div>
+            <div class="product">
+                <img src="wacth_main.jpg" alt="Smartwatch">
+                <h3>Smartwatch</h3>
+                <p>Staring Price: ₹1499</p>
+                <button> <a href="coom.html">View More</a> </button>
+            </div>
+            <div class="product">
+                <img src="speeker_main.jpeg" alt="Bluetooth Speaker">
+                <h3>Bluetooth Speaker</h3>
+                <p>Staring Price: ₹4999 </p>
+                <button> <a href="coom.html">View More</a> </button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Dhaval and Sons Electronics. All rights reserved.</p>
+    </footer>
+</body>
+</html>
