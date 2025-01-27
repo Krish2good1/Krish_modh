@@ -28,7 +28,7 @@ nav {
     justify-content: center;
     background-color: #005bb5;
     padding: 8px;
-    flex-wrap: wrap;
+    flex-wrap: wrap; /* Allow wrapping if needed */
 }
 
 nav a {
@@ -44,9 +44,29 @@ nav input {
     margin-top: 8px;
 }
 
+/* Adjust nav for mobile to display side by side */
+@media only screen and (max-width: 600px) {
+    nav {
+        justify-content: space-between; /* Distribute items evenly */
+        flex-wrap: nowrap; /* Prevent wrapping */
+        padding: 10px; /* Optional padding adjustment */
+    }
+
+    nav a, nav input {
+        margin: 0 8px; /* Reduce space between items */
+        font-size: 14px; /* Adjust font size if needed */
+    }
+
+    nav input {
+        flex-grow: 1; /* Allow search box to grow and take available space */
+        max-width: 200px; /* Set a max-width for the search box */
+    }
+}
+
+/* Mobile responsiveness (product grid stack in 1 column) */
 .product-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Ensure it's responsive */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Ensure responsive layout */
     gap: 16px;
     padding: 16px;
 }
@@ -85,29 +105,13 @@ footer {
     margin-top: 32px;
 }
 
-/* Mobile responsiveness (for devices with width up to 600px) */
-@media only screen and (max-width: 600px) {
-    nav {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .product-grid {
-        grid-template-columns: 1fr; /* Stack products in a single column on mobile */
-    }
-
-    nav input {
-        width: 100%;
-        margin-top: 10px;
-    }
-}
-
 /* Tablet responsiveness (for devices between 600px and 900px) */
 @media only screen and (max-width: 900px) {
     .product-grid {
         grid-template-columns: repeat(2, 1fr); /* Display products in two columns */
     }
 }
+
     </style>
 </head>
 <body>
